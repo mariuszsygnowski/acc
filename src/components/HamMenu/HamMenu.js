@@ -1,5 +1,6 @@
 import React from "react";
 import MenuItem from "./MenuItem";
+import MenuItemDesktop from "./MenuItemDesktop";
 import Menu from "./Menu";
 import MenuButton from "./MenuButton";
 import Content from "./Content";
@@ -7,6 +8,7 @@ import Home from "./Home";
 
 import "./css/HamMenu.css";
 import logo from "../../img/logo.svg";
+import "@mobiscroll/react-lite/dist/css/mobiscroll.min.css";
 
 export default class HamMenu extends React.Component {
   constructor(props) {
@@ -17,6 +19,7 @@ export default class HamMenu extends React.Component {
       aa: "ala ma kota",
       bb: "ala nie ma kota"
     };
+    this.handleLinkClick = this.handleLinkClick.bind(this);
   }
 
   handleMenuClick() {
@@ -37,7 +40,7 @@ export default class HamMenu extends React.Component {
       con = <Content par={this.state.bb} />;
     }
 
-    const menu = ["About Us", "Our Products", "Services", "FAQ", "Contact Us"];
+    const menu = ["Home", "Our Products", "Services", "FAQ", "Contact Us"];
     const menuItems = menu.map((val, index) => {
       return (
         <MenuItem
@@ -49,6 +52,18 @@ export default class HamMenu extends React.Component {
         >
           {val}
         </MenuItem>
+      );
+    });
+    const menuItemsDesktop = menu.map((val, index) => {
+      return (
+        <MenuItemDesktop
+          key={index}
+          onClick={() => {
+            this.handleLinkClick(index);
+          }}
+        >
+          {val}
+        </MenuItemDesktop>
       );
     });
 
@@ -66,6 +81,7 @@ export default class HamMenu extends React.Component {
           </div>
           <Menu open={this.state.menuOpen}>{menuItems}</Menu>
         </div>
+        <div className={"hamMenu__menu--desktop"}>{menuItemsDesktop}</div>
         <div className={"hamMenu__contentMenu"}>
           <div className={"hamMenu__contentMenu--con"}>{con}</div>
         </div>

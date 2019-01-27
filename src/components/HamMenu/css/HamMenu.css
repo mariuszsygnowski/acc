@@ -51,7 +51,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: black;
+  background: #263238;
   width: 100%;
   color: white;
   font-family: Lobster;
@@ -67,11 +67,23 @@
   margin: 0 auto;
 }
 
+.hamMenu__menu--desktop {
+  display: none;
+}
+
+.menuItemsDesktop {
+  width: 100%;
+  white-space: nowrap;
+}
+
 @media (min-width: 600px) {
   .hamMenu__contentMenu {
     padding-top: 0;
   }
   .hamMenu__menu {
     display: none;
+  }
+  .hamMenu__menu--desktop {
+    display: flex;
   }
 }

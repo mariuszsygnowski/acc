@@ -20,14 +20,14 @@ export default class Menu extends React.Component {
         position: "fixed",
         top: 0,
         left: 0,
-        height: this.state.open ? "100%" : 0,
+        height: this.state.open ? "auto" : 0,
         width: "100vw",
         display: "flex",
         flexDirection: "column",
-        background: "black",
-        opacity: 0.96,
+        background: "#263238",
+        opacity: 0.977,
         color: "#fafafa",
-        transition: "height 0.3s ease",
+        transition: "height 0.001s ease",
         zIndex: 2
       },
       menuList: {
