@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-2%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 95%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.hamMenu {
+  border: 1px solid green;
+  position: relative;
+}
+
+.hamMenu__contentMenu {
+  padding-top: 60px;
+  /* position: relative; */
+}
+
+.contentMenu--con {
+  margin-top: 0;
+}
+
+.hamMenu__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  /* opacity: 0.9; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  width: 100%;
+  color: white;
+  font-family: Lobster;
+  height: 60px;
+}
+
+.hamMenu__container img {
+  height: 40%;
+  padding-left: 20px;
+}
+
+.hamMenu__logo {
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .hamMenu__contentMenu {
+    padding-top: 0;
+  }
+  .hamMenu__menu {
+    display: none;
+  }
+}
