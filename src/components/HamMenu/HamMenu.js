@@ -8,6 +8,7 @@ import Home from "./Home";
 
 import "./css/HamMenu.css";
 import logo from "../../img/logo.svg";
+import mobiscroll from "@mobiscroll/react-lite";
 import "@mobiscroll/react-lite/dist/css/mobiscroll.min.css";
 
 export default class HamMenu extends React.Component {
@@ -81,7 +82,24 @@ export default class HamMenu extends React.Component {
           </div>
           <Menu open={this.state.menuOpen}>{menuItems}</Menu>
         </div>
-        <div className={"hamMenu__menu--desktop"}>{menuItemsDesktop}</div>
+
+        <mobiscroll.Form>
+          <div className="mbsc-grid mbsc-form-grid">
+            <div className="mbsc-row">
+              <div className="mbsc-col-sm-12 mbsc-col-md-2">
+                <img src={logo} alt={"logo"} />
+              </div>
+              <div className="mbsc-col-sm-12 mbsc-col-md-10">
+                <mobiscroll.FormGroup>
+                  <div className="mbsc-btn-group-justified ">
+                    {menuItemsDesktop}
+                  </div>
+                </mobiscroll.FormGroup>
+              </div>
+            </div>
+          </div>
+        </mobiscroll.Form>
+
         <div className={"hamMenu__contentMenu"}>
           <div className={"hamMenu__contentMenu--con"}>{con}</div>
         </div>

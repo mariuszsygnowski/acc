@@ -35,20 +35,7 @@ export default class Home extends React.Component {
         <p>Home</p>
         <p>Home</p>
         <p>Home</p>
-        <p>Home</p>
       </div>
-
-      //   <div className={this.props.nameClass}>
-      //     <label>
-      //       {this.props.labelName}
-      //       <input
-      //         type="text"
-      //         value={this.props.text}
-      //         onChange={this.handleChange}
-      //         placeholder={this.props.placeholder}
-      //       />
-      //     </label>
-      //   </div>
     );
   }
 }

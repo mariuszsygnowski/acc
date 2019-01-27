@@ -29,7 +29,7 @@
 }
 
 .hamMenu {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   position: relative;
 }
 
@@ -63,16 +63,16 @@
   padding-left: 20px;
 }
 
-.hamMenu__logo {
-  margin: 0 auto;
-}
-
 .hamMenu__menu--desktop {
   display: none;
 }
 
 .menuItemsDesktop {
-  width: 100%;
+  /* display: flex; */
+  /* width: 100%; */
+
+  border: 1px solid green;
+
   white-space: nowrap;
 }
 
@@ -85,5 +85,18 @@
   }
   .hamMenu__menu--desktop {
     display: flex;
+    /* flex-direction: row; */
+    /* height: 63px; */
+    /* width: 100%; */
+    border: 1px solid green;
+  }
+  .hamMenu__menu--desktop img {
+    background: #263238;
+    padding: 13px;
+    height: 60px;
+    /* height: calc(100% + 3px); */
+  }
+  .mmm {
+    flex-direction: row;
   }
 }

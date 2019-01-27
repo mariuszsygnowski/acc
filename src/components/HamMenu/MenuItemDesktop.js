@@ -12,18 +12,13 @@ export default class MenuItemDesktop extends React.Component {
 
   render() {
     return (
-      <div className="menuItemsDesktop">
-        <mobiscroll.Form>
-          <div
-            className="mbsc-btn-group-justified "
-            onClick={this.props.onClick}
-          >
-            <mobiscroll.Button className=" mbsc-btn-primary " flat={true}>
-              {this.props.children}
-            </mobiscroll.Button>
-          </div>
-        </mobiscroll.Form>
-      </div>
+      <mobiscroll.Button
+        onClick={this.props.onClick}
+        className="mbsc-btn-primary "
+        flat={true}
+      >
+        {this.props.children}
+      </mobiscroll.Button>
     );
   }
 }
