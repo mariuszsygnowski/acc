@@ -16,7 +16,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className={"home"}>
-        <p>1Home</p>
+        <h2>Welcome to GABHEN ACC LIMITED</h2>
         <p>Home</p>
         <p>Home</p>
         <p>Home</p>

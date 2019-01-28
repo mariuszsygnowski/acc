@@ -72,8 +72,7 @@ export default class HamMenu extends React.Component {
       <div className={"hamMenu"}>
         <div className={"hamMenu__menu"}>
           <div className={"hamMenu__container"}>
-            <img src={logo} alt={"logo"} />
-
+            <img className="full" src={logo} alt={"logo"} />
             <MenuButton
               open={this.state.menuOpen}
               onClick={() => this.handleMenuClick()}
@@ -82,23 +81,20 @@ export default class HamMenu extends React.Component {
           </div>
           <Menu open={this.state.menuOpen}>{menuItems}</Menu>
         </div>
-
-        <mobiscroll.Form>
-          <div className="mbsc-grid mbsc-form-grid">
-            <div className="mbsc-row">
-              <div className="mbsc-col-sm-12 mbsc-col-md-2">
-                <img src={logo} alt={"logo"} />
-              </div>
-              <div className="mbsc-col-sm-12 mbsc-col-md-10">
-                <mobiscroll.FormGroup>
-                  <div className="mbsc-btn-group-justified ">
-                    {menuItemsDesktop}
-                  </div>
-                </mobiscroll.FormGroup>
-              </div>
-            </div>
+        {/* <mobiscroll.Form className="hamMenu__menu--desktop"> */}
+        {/* <mobiscroll.FormGroup> */}
+        <div className="df hamMenu__menu--desktop">
+          <div className="above">
+            <img className="smalll" src={logo} alt={"logo"} />
           </div>
-        </mobiscroll.Form>
+          <mobiscroll.Form>
+            <mobiscroll.FormGroup className="mbsc-btn-group space">
+              {menuItemsDesktop}
+            </mobiscroll.FormGroup>
+          </mobiscroll.Form>
+        </div>
+        {/* </mobiscroll.FormGroup> */}
+        {/* </mobiscroll.Form> */}
 
         <div className={"hamMenu__contentMenu"}>
           <div className={"hamMenu__contentMenu--con"}>{con}</div>
