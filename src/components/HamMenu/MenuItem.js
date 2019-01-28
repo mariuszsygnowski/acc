@@ -16,8 +16,9 @@ export default class MenuItem extends React.Component {
     const styles = {
       container: {
         opacity: 0,
-        animation: "2s appear forwards",
-        animationDelay: this.props.delay
+        animation: "1.5s appear forwards",
+        animationDelay: this.props.delay,
+        zIndex: 12
       },
       menuItem: {
         fontFamily: `'Open Sans', sans-serif`,

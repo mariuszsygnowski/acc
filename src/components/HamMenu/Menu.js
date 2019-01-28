@@ -28,7 +28,7 @@ export default class Menu extends React.Component {
         opacity: 0.977,
         color: "#fafafa",
         transition: "height 0.001s ease",
-        zIndex: 2
+        zIndex: 12
       },
       menuList: {
         paddingTop: "4rem"

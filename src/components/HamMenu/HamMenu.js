@@ -54,7 +54,7 @@ export default class HamMenu extends React.Component {
       return (
         <MenuItem
           key={index}
-          delay={`${index * 0.2}s`}
+          delay={`${index * 0.12}s`}
           onClick={() => {
             this.handleLinkClick(index);
           }}
