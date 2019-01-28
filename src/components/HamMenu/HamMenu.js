@@ -3,7 +3,9 @@ import MenuItem from "./MenuItem";
 import MenuItemDesktop from "./MenuItemDesktop";
 import Menu from "./Menu";
 import MenuButton from "./MenuButton";
-import Content from "./Content";
+import OurTeam from "./OurTeam";
+import OurServices from "./OurServices";
+import ContactUs from "./ContactUs";
 import Home from "./Home";
 
 import "./css/HamMenu.css";
@@ -38,7 +40,13 @@ export default class HamMenu extends React.Component {
       con = <Home />;
     }
     if (this.state.currentContent === 1) {
-      con = <Content par={this.state.bb} />;
+      con = <OurTeam />;
+    }
+    if (this.state.currentContent === 2) {
+      con = <OurServices />;
+    }
+    if (this.state.currentContent === 3) {
+      con = <ContactUs />;
     }
 
     const menu = ["ABOUT US", "OUR TEAM", "OUR SERVICES", "CONTACT US"];

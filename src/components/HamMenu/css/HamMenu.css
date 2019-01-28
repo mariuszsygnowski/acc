@@ -30,7 +30,8 @@
 
 .hamMenu {
   /* border: 1px solid green; */
-  position: relative;
+  /* position: relative; */
+  width: 100vw;
 }
 .hamMenu__menu {
   /* display: grid;
