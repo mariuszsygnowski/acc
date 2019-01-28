@@ -1,3 +1,62 @@
 .home {
-  /* margin: 0; */
+  text-align: left;
+}
+
+.home__firstSection {
+  position: relative;
+  max-width: 100vw;
+  height: 316px;
+  /* min-height: 219px; */
+  /* max-height: 900px; */
+  /* flex-shrink: 0; */
+  /* flex-grow: 0; */
+  /* display: grid; */
+  /* grid-template-rows: auto; */
+  /* width: auto; */
+  /* min-height: 300px; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-position: 50% 50%; */
+  /* background-color: red; */
+
+  /* background-position: center center; */
+  /* background-size: 100% auto; */
+  /* display: grid;
+  grid-template-rows: 100%; */
+  /* background-repeat: no-repeat; */
+  /* background-position: 100% 50%; Sets reference point to scale from */
+  /* background-size: cover; */
+  /* Sets background image to cover entire element */
+  /* width: 100%; */
+}
+
+.home__firstSection__image {
+  background-image: url("http://www.milner-smeaton.co.uk/images/ms1920-crop-u949113.jpg?crc=4169677626");
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.responsive-image {
+  position: relative;
+  max-width: 100%;
+}
+
+.responsive-image__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }

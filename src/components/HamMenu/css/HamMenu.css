@@ -89,40 +89,27 @@
   }
   .hamMenu__menu--desktop {
     display: grid;
-    /* background: #263238; */
+    height: 4rem;
+    display: grid;
+    grid-template-columns: auto 4fr;
   }
-  .hamMenu__menu--desktop img {
+
+  .hamMenu__menu--img {
+    width: 120px;
     background: #263238;
-    padding-left: 1rem;
-    /* height: 60px; */
     height: 100%;
+    padding-left: 1rem;
   }
-  .mmm {
-    width: 12rem;
-  }
-  .df {
+  .hamMenu__menu--buttons {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: min-content repeat(4, auto) min-content;
+    align-self: center;
+    font-size: 0.81rem;
   }
 
-  .smalll {
+  .hamMenu__menu--buttons1 {
     display: grid;
-    /* border: 1px solid green; */
-    width: 140px;
-    justify-self: center;
-  }
-
-  .above {
-    /* border: 1px solid blue; */
-    /* min-height: 150px; */
-    display: grid;
-    align-items: center;
-  }
-
-  .space {
-    display: grid;
-    white-space: nowrap;
-
-    grid-template-columns: repeat(5, auto);
+    background: #263238;
+    height: 100%;
   }
 }

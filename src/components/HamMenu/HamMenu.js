@@ -41,12 +41,12 @@ export default class HamMenu extends React.Component {
       con = <Content par={this.state.bb} />;
     }
 
-    const menu = ["Home", "Our Products", "Services", "FAQ", "Contact Us"];
+    const menu = ["ABOUT US", "OUR TEAM", "OUR SERVICES", "CONTACT US"];
     const menuItems = menu.map((val, index) => {
       return (
         <MenuItem
           key={index}
-          delay={`${index * 0.1}s`}
+          delay={`${index * 0.2}s`}
           onClick={() => {
             this.handleLinkClick(index);
           }}
@@ -81,20 +81,14 @@ export default class HamMenu extends React.Component {
           </div>
           <Menu open={this.state.menuOpen}>{menuItems}</Menu>
         </div>
-        {/* <mobiscroll.Form className="hamMenu__menu--desktop"> */}
-        {/* <mobiscroll.FormGroup> */}
-        <div className="df hamMenu__menu--desktop">
-          <div className="above">
-            <img className="smalll" src={logo} alt={"logo"} />
-          </div>
-          <mobiscroll.Form>
-            <mobiscroll.FormGroup className="mbsc-btn-group space">
+        <div className="hamMenu__menu--desktop">
+          <img className="hamMenu__menu--img" src={logo} alt={"logo"} />
+          <div className="hamMenu__menu--buttons1">
+            <mobiscroll.Form className="hamMenu__menu--buttons">
               {menuItemsDesktop}
-            </mobiscroll.FormGroup>
-          </mobiscroll.Form>
+            </mobiscroll.Form>
+          </div>
         </div>
-        {/* </mobiscroll.FormGroup> */}
-        {/* </mobiscroll.Form> */}
 
         <div className={"hamMenu__contentMenu"}>
           <div className={"hamMenu__contentMenu--con"}>{con}</div>

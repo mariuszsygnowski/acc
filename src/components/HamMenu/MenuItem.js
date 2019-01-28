@@ -16,7 +16,7 @@ export default class MenuItem extends React.Component {
     const styles = {
       container: {
         opacity: 0,
-        animation: "1s appear forwards",
+        animation: "2s appear forwards",
         animationDelay: this.props.delay
       },
       menuItem: {

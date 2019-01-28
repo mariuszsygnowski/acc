@@ -23,7 +23,7 @@ class App extends Component {
       <div className="app">
         <HamMenu />
 
-        <mobiscroll.Form>
+        {/* <mobiscroll.Form>
           <div className=" mbsc-btn-warning ">
             <mobiscroll.Button
               className=" mbsc-btn-outline mbsc-btn-primary "
@@ -38,7 +38,7 @@ class App extends Component {
               Flag
             </mobiscroll.Button>
           </div>
-        </mobiscroll.Form>
+        </mobiscroll.Form> */}
       </div>
     );
   }

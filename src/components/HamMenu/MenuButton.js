@@ -36,7 +36,7 @@ export default class MenuButton extends React.Component {
         height: "2px",
         width: "20px",
         background: this.state.color,
-        transition: "all 0.2s ease"
+        transition: "all 0.9s ease"
       },
       lineTop: {
         transform: this.state.open ? "rotate(45deg)" : "none",
@@ -45,7 +45,7 @@ export default class MenuButton extends React.Component {
       },
       lineMiddle: {
         opacity: this.state.open ? 0 : 1,
-        transform: this.state.open ? "translateX(-16px)" : "none"
+        transform: "none"
       },
       lineBottom: {
         transform: this.state.open ? "translateX(-1px) rotate(-45deg)" : "none",
