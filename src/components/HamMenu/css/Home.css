@@ -34,6 +34,10 @@
   background-image: url("http://www.milner-smeaton.co.uk/images/ms1920-crop-u949113.jpg?crc=4169677626");
   background-repeat: no-repeat;
   background-position: left center;
+  text-align: center;
+  color: #808990;
+
+  padding-left: 3rem;
 
   position: absolute;
   top: 0;
@@ -59,4 +63,8 @@
   width: 100%;
   height: 100%;
   background-size: cover;
+}
+
+.home__para {
+  padding: 0 2rem;
 }

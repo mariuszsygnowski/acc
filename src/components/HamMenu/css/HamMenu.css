@@ -112,4 +112,7 @@
     background: #263238;
     height: 100%;
   }
+  .home__firstSection__image {
+    padding-left: 0;
+  }
 }
