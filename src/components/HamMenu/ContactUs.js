@@ -6,21 +6,26 @@ export default class ContactUs extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuOpen: false,
-      currentContent: 3,
-      aa: "ala ma kota",
-      bb: "ala nie ma kota",
       yourName: "",
+      yourNameValid: true,
       yourEmail: "",
-      yourMessage: ""
+      yourEmailValid: true,
+      yourMessage: "",
+      yourMessageValid: true
     };
     // this.handleLinkClick = this.handleLinkClick.bind(this);
-    this.changeValue = this.changeValue.bind(this);
+    this.changeValueName = this.changeValueName.bind(this);
     this.changeValueEmail = this.changeValueEmail.bind(this);
     this.changeValueMessage = this.changeValueMessage.bind(this);
   }
 
-  changeValue(event) {
+  changeValueName(event) {
+    if (event.target.value === "") {
+      this.setState({ yourNameValid: false });
+    } else {
+      this.setState({ yourNameValid: true });
+    }
+
     this.setState({ yourName: event.target.value });
   }
   changeValueEmail(event) {
@@ -70,8 +75,10 @@ export default class ContactUs extends React.Component {
             icon="user4"
             inputStyle="outline"
             placeholder="Your name"
-            onChange={this.changeValue}
+            onChange={this.changeValueName}
             value={this.state.yourName}
+            valid={this.state.yourNameValid}
+            errorMessage="Your name can't be empty"
           />
           <mobiscroll.Input
             name="email"
@@ -81,6 +88,8 @@ export default class ContactUs extends React.Component {
             placeholder="Your e-mail"
             onChange={this.changeValueEmail}
             value={this.state.yourEmail}
+            valid={this.state.yourEmailValid}
+            errorMessage="Your email can't be empty"
           />
 
           <mobiscroll.Textarea
@@ -92,6 +101,8 @@ export default class ContactUs extends React.Component {
             labelStyle="floating"
             onChange={this.changeValueMessage}
             value={this.state.yourMessage}
+            valid={this.state.yourMessageValid}
+            errorMessage="Your message can't be empty"
           />
 
           <mobiscroll.Button onClick={this.showAlert} type="submit">
