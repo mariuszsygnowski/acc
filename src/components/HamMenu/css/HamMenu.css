@@ -38,9 +38,9 @@
   grid-template-columns: auto 1fr; */
 }
 
-.full {
-  /* height: 400px; */
-}
+/* .full {
+  height: 900px;
+} */
 
 .hamMenu__container {
   position: fixed;
@@ -98,16 +98,17 @@
   }
 
   .hamMenu__menu--img {
+    display: grid;
+    align-self: center;
     width: 120px;
     background: #263238;
-    height: 100%;
+    height: auto;
     padding-left: 1rem;
   }
   .hamMenu__menu--buttons {
-    /* display: grid; */
-    /* grid-template-columns: min-content repeat(4, auto) min-content; */
-    /* align-self: center; */
-    font-size: 0.81rem;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-content: center;
     padding-right: 15px;
   }
   .whitec {
@@ -115,7 +116,13 @@
   }
 
   .hamMenu__menu--buttons1 {
-    /* display: grid; */
+    display: grid;
+    grid-template-columns: min-content auto 1fr auto;
+    /* grid-template-rows: auto; */
+    /* align-items: center; */
+    width: 100vw;
+    font-size: 0.81rem;
+
     /* background: #263238; */
     /* height: 100%; */
   }

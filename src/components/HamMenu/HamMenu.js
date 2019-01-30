@@ -90,9 +90,9 @@ export default class HamMenu extends React.Component {
           <Menu open={this.state.menuOpen}>{menuItems}</Menu>
         </div>
         <div className="hamMenu__menu--desktop">
-          <img className="hamMenu__menu--img" src={logo} alt={"logo"} />
-          <div className="hamMenu__menu--buttons1">
-            <mobiscroll.Form className="hamMenu__menu--buttons ">
+          <div className="hamMenu__menu--buttons">
+            <mobiscroll.Form className="mbsc-btn-group-justified hamMenu__menu--buttons1">
+              <img className="hamMenu__menu--img" src={logo} alt={"logo"} />
               <mobiscroll.FormGroup>
                 <div className="mbsc-btn-group-justified">
                   {menuItemsDesktop}

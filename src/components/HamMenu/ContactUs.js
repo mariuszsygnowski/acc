@@ -29,9 +29,19 @@ export default class ContactUs extends React.Component {
     this.setState({ yourName: event.target.value });
   }
   changeValueEmail(event) {
+    if (event.target.value === "") {
+      this.setState({ yourEmailValid: false });
+    } else {
+      this.setState({ yourEmailValid: true });
+    }
     this.setState({ yourEmail: event.target.value });
   }
   changeValueMessage(event) {
+    if (event.target.value === "") {
+      this.setState({ yourMessageValid: false });
+    } else {
+      this.setState({ yourMessageValid: true });
+    }
     this.setState({ yourMessage: event.target.value });
   }
 
@@ -47,6 +57,15 @@ export default class ContactUs extends React.Component {
         message: "All boxes is requied",
         color: "danger"
       });
+      if (this.state.yourName === "") {
+        this.setState({ yourNameValid: false });
+      }
+      if (this.state.yourEmail === "") {
+        this.setState({ yourEmailValid: false });
+      }
+      if (this.state.yourMessage === "") {
+        this.setState({ yourMessageValid: false });
+      }
     } else {
       mobiscroll.alert({
         title: `Hi ${this.state.yourName} !`,
