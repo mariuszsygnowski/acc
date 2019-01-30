@@ -55,7 +55,8 @@ export default class ContactUs extends React.Component {
     ) {
       mobiscroll.toast({
         message: "All boxes is requied",
-        color: "danger"
+        color: "danger",
+        display: "center"
       });
       if (this.state.yourName === "") {
         this.setState({ yourNameValid: false });
@@ -74,7 +75,9 @@ export default class ContactUs extends React.Component {
         } has been sent. We will contact with you shortly`,
         callback: function() {
           mobiscroll.toast({
-            message: "Thank you for message"
+            message: "Thank you for message",
+            color: "success",
+            display: "center"
           });
         }
       });
@@ -85,6 +88,10 @@ export default class ContactUs extends React.Component {
     return (
       <mobiscroll.Form theme="auto" lang="auto" className="aa">
         <mobiscroll.FormGroup>
+          <mobiscroll.FormGroupTitle>
+            Send us message.
+          </mobiscroll.FormGroupTitle>
+
           <mobiscroll.Input
             type="text"
             icon="user4"
