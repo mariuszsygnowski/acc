@@ -14,8 +14,9 @@ export default class MenuItemDesktop extends React.Component {
     return (
       <mobiscroll.Button
         onClick={this.props.onClick}
-        className="mbsc-btn-primary "
+        // outline={true}
         flat={true}
+        color="light"
       >
         {this.props.children}
       </mobiscroll.Button>

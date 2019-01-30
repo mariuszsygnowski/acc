@@ -5,7 +5,7 @@
 
 .home__firstSection {
   position: relative;
-  height: 316px;
+  height: 51.4vw;
   /* min-height: 219px; */
   /* max-height: 900px; */
   /* flex-shrink: 0; */
@@ -33,7 +33,7 @@
 .home__firstSection__image {
   background-image: url("http://www.milner-smeaton.co.uk/images/ms1920-crop-u949113.jpg?crc=4169677626");
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: top left;
   text-align: center;
   color: #808990;
 
@@ -47,6 +47,7 @@
   width: auto;
   height: 100%;
   background-size: cover;
+  background-size: 120% 120%;
 }
 
 .home__para {

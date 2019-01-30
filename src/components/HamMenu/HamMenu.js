@@ -18,7 +18,7 @@ export default class HamMenu extends React.Component {
     super(props);
     this.state = {
       menuOpen: false,
-      currentContent: 0,
+      currentContent: 3,
       aa: "ala ma kota",
       bb: "ala nie ma kota"
     };
@@ -92,8 +92,12 @@ export default class HamMenu extends React.Component {
         <div className="hamMenu__menu--desktop">
           <img className="hamMenu__menu--img" src={logo} alt={"logo"} />
           <div className="hamMenu__menu--buttons1">
-            <mobiscroll.Form className="hamMenu__menu--buttons">
-              {menuItemsDesktop}
+            <mobiscroll.Form className="hamMenu__menu--buttons ">
+              <mobiscroll.FormGroup>
+                <div className="mbsc-btn-group-justified">
+                  {menuItemsDesktop}
+                </div>
+              </mobiscroll.FormGroup>
             </mobiscroll.Form>
           </div>
         </div>
