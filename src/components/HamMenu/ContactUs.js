@@ -83,11 +83,7 @@ export default class ContactUs extends React.Component {
 
   render() {
     return (
-      <mobiscroll.Form
-        theme="auto"
-        lang="auto"
-        className="hamMenu__contentMenu--con"
-      >
+      <mobiscroll.Form theme="auto" lang="auto" className="aa">
         <mobiscroll.FormGroup>
           <mobiscroll.Input
             type="text"

@@ -18,9 +18,7 @@ export default class HamMenu extends React.Component {
     super(props);
     this.state = {
       menuOpen: false,
-      currentContent: 3,
-      aa: "ala ma kota",
-      bb: "ala nie ma kota"
+      currentContent: 0
     };
     this.handleLinkClick = this.handleLinkClick.bind(this);
   }
@@ -77,8 +75,8 @@ export default class HamMenu extends React.Component {
     });
 
     return (
-      <div className={"hamMenu"}>
-        <div className={"hamMenu__menu"}>
+      <div className="hamMenu">
+        <div className="hamMenu__menu">
           <div className={"hamMenu__container"}>
             <img className="full" src={logo} alt={"logo"} />
             <MenuButton
@@ -91,20 +89,14 @@ export default class HamMenu extends React.Component {
         </div>
         <div className="hamMenu__menu--desktop">
           <div className="hamMenu__menu--buttons">
-            <mobiscroll.Form className="mbsc-btn-group-justified hamMenu__menu--buttons1">
+            <mobiscroll.Form className=" hamMenu__menu--buttons1">
               <img className="hamMenu__menu--img" src={logo} alt={"logo"} />
-              <mobiscroll.FormGroup>
-                <div className="mbsc-btn-group-justified">
-                  {menuItemsDesktop}
-                </div>
-              </mobiscroll.FormGroup>
+              <div className="mbsc-btn-group-justified">{menuItemsDesktop}</div>
             </mobiscroll.Form>
           </div>
         </div>
 
-        <div className={"hamMenu__contentMenu"}>
-          <div className={"hamMenu__contentMenu--con"}>{con}</div>
-        </div>
+        <div className={"hamMenu__contentMenu"}>{con}</div>
       </div>
     );
   }

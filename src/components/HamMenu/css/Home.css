@@ -6,28 +6,6 @@
 .home__firstSection {
   position: relative;
   height: 51.4vw;
-  /* min-height: 219px; */
-  /* max-height: 900px; */
-  /* flex-shrink: 0; */
-  /* flex-grow: 0; */
-  /* display: grid; */
-  /* grid-template-rows: auto; */
-  /* width: auto; */
-  /* min-height: 300px; */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  /* background-position: 50% 50%; */
-  /* background-color: red; */
-
-  /* background-position: center center; */
-  /* background-size: 100% auto; */
-  /* display: grid;
-  grid-template-rows: 100%; */
-  /* background-repeat: no-repeat; */
-  /* background-position: 100% 50%; Sets reference point to scale from */
-  /* background-size: cover; */
-  /* Sets background image to cover entire element */
-  /* width: 100%; */
 }
 
 .home__firstSection__image {
@@ -36,9 +14,7 @@
   background-position: top left;
   text-align: center;
   color: #808990;
-
   padding-left: 3rem;
-
   position: absolute;
   top: 0;
   right: 0;
